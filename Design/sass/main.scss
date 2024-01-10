@@ -1,0 +1,452 @@
+@import '_colors.scss';
+@import '_animation.scss';
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-padding-top: 58px;
+}
+
+.orange-text {
+	color: $primary-color;
+	font-weight: bold;
+}
+
+.gold-text {
+	color: $secondary-color;
+	font-weight: bold;
+}
+
+.shadow-bg {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.underline {
+	background-color: $primary-color;
+	width: 220px;
+	height: 5px;
+	margin: 0 auto 30px;
+}
+
+.aboutus {
+	i {
+		padding: 20px;
+		margin-top: 20px;
+		font-size: 30px;
+		color: $icon-color;
+		transition: color 0.3s;
+	}
+
+	i:hover {
+		color: $primary-color;
+	}
+
+	.aboutus-card-title {
+		font-weight: bold;
+		color: $secondary-color;
+		font-size: 18px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+
+	.aboutus-card-text {
+		font-size: 14px;
+	}
+}
+
+.hero {
+	position: relative;
+	background-image: url('../img/skytowers.png');
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+
+	z-index: 0;
+
+	.aboutus-shadow {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.7);
+		z-index: -5;
+	}
+}
+
+.blog {
+	.card-group {
+		h5 {
+			font-weight: bold;
+			color: $secondary-color;
+			font-size: 14px;
+		}
+
+		.card {
+			background-color: #333;
+			color: $text-color;
+			margin: 5px;
+			font-size: 12px;
+		}
+	}
+
+	h5 {
+		font-weight: bold;
+		color: $secondary-color;
+		font-size: 20px;
+	}
+
+	.carousel-item {
+		color: $text-color;
+		font-size: 14px;
+		position: relative;
+		height: 500px;
+	}
+
+	.carousel-caption {
+		position: absolute;
+		padding: 30px 150px;
+		left: 0;
+		right: 0;
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+
+	.carousel-indicators {
+		padding-bottom: 20px;
+	}
+}
+
+.prices {
+	font-size: 18px;
+	.price-box {
+		scale: 0.9;
+		margin: 20px;
+		padding: 30px;
+		background-color: rgba(9, 9, 56, 0.211);
+		box-shadow: 0px 0px 100px 5px #dad85e95;
+		border-radius: 40px;
+		transition: 0.3s;
+
+		h3 {
+			font-weight: bold;
+			color: $secondary-color;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+
+		span {
+			font-weight: bold;
+			color: burlywood;
+		}
+
+		i {
+			padding: 0 10px;
+			font-size: 30px;
+			color: $icon-color;
+		}
+
+		.price-tag {
+			font-weight: bold;
+			font-size: 28px;
+		}
+	}
+
+	.price-box:hover {
+		scale: 1.02;
+		rotate: 5deg;
+	}
+
+	.popular:hover {
+		scale: 1.04;
+		rotate: -5deg;
+	}
+
+	.popular {
+		rotate: 1deg;
+		scale: 1;
+		background-color: $bg-price-color;
+		box-shadow: 0px 0px 100px 5px #ff5303;
+
+		h3 {
+			color: $primary-color;
+		}
+
+		span {
+			color: rgb(255, 145, 0);
+		}
+
+		i {
+			color: $primary-color;
+		}
+
+		.price-tag {
+			color: $primary-color;
+			font-size: 28px;
+		}
+	}
+
+	.price-info {
+		margin-top: 30px;
+		a {
+			text-decoration: none;
+			color: $secondary-color;
+		}
+	}
+}
+
+.category {
+	position: relative;
+	background-image: url('../img/backgroundCategories.png');
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: 0;
+
+	.category-shadow {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.6);
+		top: 0;
+		z-index: -5;
+	}
+
+	.card-group {
+		.card {
+			background-color: $bg-category-color;
+			color: $text-color;
+			border-radius: 30px;
+			transition: 0.3s;
+
+			img {
+				height: 300px;
+				object-fit: cover;
+			}
+
+			h5 {
+				font-weight: bold;
+				color: $secondary-color;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				text-align: center;
+				margin-bottom: 20px;
+			}
+
+			i {
+				padding: 0 10px;
+				font-size: 30px;
+				color: $icon-color;
+				transition: 0.3s;
+				padding: 10px;
+			}
+
+			i:hover {
+				color: $primary-color;
+			}
+
+			.card-img-top {
+				border-radius: 30px;
+			}
+		}
+
+		.card:hover {
+			scale: 0.96;
+		}
+	}
+}
+
+.achievements {
+	i {
+		padding: 10px;
+		font-size: 48px;
+		text-shadow: 0px 0px 20px $primary-color;
+		transition: 0.3s;
+	}
+
+	i:hover {
+		text-shadow: 0px 0px 20px $icon-color;
+	}
+
+	.achievement-number {
+		font-size: 22px;
+		font-weight: bold;
+		color: $secondary-color;
+	}
+
+	.achievement-text {
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+
+	.achievement {
+		padding: 20px;
+	}
+}
+
+.contact {
+	position: relative;
+	background-image: url('../img/contact.jpg');
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: 0;
+
+	i {
+		padding: 10px;
+		font-size: 24px;
+		color: $icon-color;
+		transition: 0.3s;
+	}
+
+	i:hover {
+		color: $secondary-color;
+	}
+
+	h2 {
+		font-size: 32px;
+		font-weight: bold;
+	}
+
+	.contact-shadow {
+		z-index: -5;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.6);
+		top: 0;
+	}
+
+	.contact-us {
+		display: flex;
+		align-items: center;
+
+		.contact-item {
+			margin: 30px 0px;
+
+			h3 {
+				margin-bottom: 20px;
+				color: $nav-color;
+				text-transform: uppercase;
+				font-weight: bold;
+				letter-spacing: 2px;
+			}
+
+			p {
+				font-size: 18px;
+				color: antiquewhite;
+			}
+		}
+	}
+}
+
+h2 {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+body {
+	position: relative;
+	color: $text-color;
+	background-color: #333;
+	font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+	z-index: 1;
+	font-size: 16px;
+	text-transform: uppercase;
+	transition: background-color 1s;
+
+	i {
+		padding: 6px;
+		transition: 0.3s;
+	}
+
+	.nav-link {
+		color: $nav-color;
+	}
+
+	.navbar-nav .nav-link.active {
+		font-weight: bold;
+		color: $primary-color;
+	}
+
+	.nav-link:hover {
+		font-weight: bold;
+		color: $secondary-color;
+	}
+
+	.navbar-brand {
+		font-weight: bold;
+		color: $secondary-color;
+	}
+
+	.active {
+		color: $primary-color;
+	}
+
+	.fa-bars {
+		color: $secondary-color;
+	}
+
+	.fa-bars:hover {
+		color: $primary-color;
+	}
+}
+
+header {
+	h1 {
+		text-transform: uppercase;
+	}
+
+	p {
+		font-style: italic;
+	}
+
+	.hero-img {
+		position: relative;
+		height: 100vh;
+		background-image: url('../img/headerBackground.png');
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+		z-index: 0;
+	}
+
+	.hero-shadow {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+		z-index: -5;
+	}
+
+	.hero-text {
+		padding: 10px;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		letter-spacing: 2px;
+		z-index: 5;
+	}
+
+	.fa-chevron-down {
+		position: absolute;
+		font-size: 30px;
+		bottom: 20px;
+		transform: translateX(-50%);
+		left: 50%;
+		color: $text-color;
+	}
+
+	.fa-chevron-down:hover {
+		color: $secondary-color;
+	}
+}
