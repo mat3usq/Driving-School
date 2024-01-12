@@ -518,6 +518,7 @@ header .fa-chevron-down:hover {
   font-weight: 500;
 }
 .login .social-text {
+  margin: 20px;
   padding: 0.7rem 0;
   font-size: 1rem;
 }
@@ -543,7 +544,7 @@ header .fa-chevron-down:hover {
   color: #EF476F;
 }
 .login .btn {
-  width: 150px;
+  width: 180px;
   background-color: #4d84e2;
   border: none;
   outline: none;
@@ -636,6 +637,15 @@ header .fa-chevron-down:hover {
 .login .btn.transparent:hover {
   background-color: #99d98c;
   color: #4d84e2;
+}
+.login .link {
+  color: #FFD166;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.login .link:hover {
+  color: #EF476F;
 }
 .login .container.sign-up-mode:before {
   transform: translate(100%, -50%);

@@ -566,6 +566,7 @@ header {
 	}
 
 	.social-text {
+		margin: 20px;
 		padding: 0.7rem 0;
 		font-size: 1rem;
 	}
@@ -595,7 +596,7 @@ header {
 	}
 
 	.btn {
-		width: 150px;
+		width: 180px;
 		background-color: $btn-bg-color;
 		border: none;
 		outline: none;
@@ -702,6 +703,17 @@ header {
 	.btn.transparent:hover {
 		background-color: $btn-bg-color-hover;
 		color: $btn-bg-color;
+	}
+
+	.link{
+		color: $secondary-color;
+		font-weight: bold;
+		letter-spacing: 1px;
+		text-decoration: none;
+	}
+	
+	.link:hover{
+		color: $primary-color;
 	}
 
 	/* ANIMATION */
