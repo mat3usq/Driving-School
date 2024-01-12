@@ -523,7 +523,7 @@ header {
 	}
 
 	.title {
-		font-size: 2.2rem;
+		font-size: 1.8rem;
 		color: $secondary-color;
 		margin-bottom: 10px;
 	}
@@ -542,7 +542,7 @@ header {
 	}
 
 	.input-field i {
-		padding-left: 15px;
+		padding-left: 25px;
 		line-height: 55px;
 		color: $secondary-color;
 		transition: 0.5s;
@@ -557,8 +557,7 @@ header {
 		font-weight: 600;
 		font-size: 1.1rem;
 		color: $text-color;
-		text-align: center;
-		padding: 0 17px;
+		padding: 0 20px;
 	}
 
 	.input-field input::placeholder {

@@ -476,7 +476,7 @@ header .fa-chevron-down:hover {
   z-index: 2;
 }
 .login .title {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   color: #FFD166;
   margin-bottom: 10px;
 }
@@ -493,7 +493,7 @@ header .fa-chevron-down:hover {
   position: relative;
 }
 .login .input-field i {
-  padding-left: 15px;
+  padding-left: 25px;
   line-height: 55px;
   color: #FFD166;
   transition: 0.5s;
@@ -507,8 +507,7 @@ header .fa-chevron-down:hover {
   font-weight: 600;
   font-size: 1.1rem;
   color: aliceblue;
-  text-align: center;
-  padding: 0 17px;
+  padding: 0 20px;
 }
 .login .input-field input::-moz-placeholder {
   color: rgb(192, 192, 219);
