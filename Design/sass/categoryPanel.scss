@@ -42,6 +42,10 @@ h2 {
 	margin: 0 auto 30px;
 }
 
+.navbar-left.show {
+	display: block;
+}
+
 nav {
 	position: absolute;
 	z-index: 100;
@@ -117,6 +121,13 @@ nav {
 		.nav-link {
 			padding: 10px 20px;
 		}
+
+		.logout {
+			display: none;
+			.fa-arrow-right-to-bracket {
+				color: $icon-color;
+			}
+		}
 	}
 
 	i {
@@ -124,6 +135,32 @@ nav {
 		margin-right: 10px;
 		color: $category-icon;
 	}
+}
+
+@keyframes itemAnimation {
+	from {
+		transform: translateX(-100%);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+.animation {
+	animation: itemAnimation .6s both;
+}
+
+@keyframes itemAnimationReverse {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-100%);
+	}
+}
+
+.animationReverse {
+	animation: itemAnimationReverse .6s both;
 }
 
 .navbar-top {
@@ -134,6 +171,15 @@ nav {
 	flex-wrap: nowrap;
 	justify-content: space-between;
 	align-items: center;
+
+	button {
+		margin: 20px;
+		padding: 6px;
+		background: transparent;
+		border: none;
+		font-size: 30px;
+		display: none;
+	}
 
 	.navbar-brand,
 	.box-account {
@@ -186,6 +232,7 @@ nav {
 					font-size: 20px;
 					font-style: italic;
 					letter-spacing: 1px;
+					text-align: center;
 				}
 
 				.container-category {
@@ -199,7 +246,7 @@ nav {
 					}
 
 					.category {
-						font-size: 20px;
+						font-size: 19px;
 						display: flex;
 						flex-direction: column;
 						align-items: center;
@@ -304,6 +351,12 @@ nav {
 @media (max-width: 720px) {
 	.navbar-left {
 		display: none;
+
+		.navbar-nav {
+			.logout {
+				display: block;
+			}
+		}
 	}
 
 	.categories {
@@ -314,6 +367,16 @@ nav {
 				height: 88vh;
 				width: 100%;
 			}
+		}
+	}
+
+	.navbar-top {
+		button {
+			display: block;
+		}
+
+		.box-account {
+			display: none;
 		}
 	}
 }

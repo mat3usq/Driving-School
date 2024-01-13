@@ -40,6 +40,10 @@ h2 {
   margin: 0 auto 30px;
 }
 
+.navbar-left.show {
+  display: block;
+}
+
 nav {
   position: absolute;
   z-index: 100;
@@ -103,10 +107,40 @@ nav .fa-bars:hover {
 .navbar-left .navbar-nav .nav-link {
   padding: 10px 20px;
 }
+.navbar-left .navbar-nav .logout {
+  display: none;
+}
+.navbar-left .navbar-nav .logout .fa-arrow-right-to-bracket {
+  color: springgreen;
+}
 .navbar-left i {
   font-size: 20px;
   margin-right: 10px;
   color: #4cc9f0;
+}
+
+@keyframes itemAnimation {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.animation {
+  animation: itemAnimation 0.6s both;
+}
+
+@keyframes itemAnimationReverse {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.animationReverse {
+  animation: itemAnimationReverse 0.6s both;
 }
 
 .navbar-top {
@@ -117,6 +151,14 @@ nav .fa-bars:hover {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+}
+.navbar-top button {
+  margin: 20px;
+  padding: 6px;
+  background: transparent;
+  border: none;
+  font-size: 30px;
+  display: none;
 }
 .navbar-top .navbar-brand,
 .navbar-top .box-account {
@@ -166,6 +208,7 @@ nav .fa-bars:hover {
   font-size: 20px;
   font-style: italic;
   letter-spacing: 1px;
+  text-align: center;
 }
 .categories .hero-img .box-category .box-container .container-category {
   display: flex;
@@ -177,7 +220,7 @@ nav .fa-bars:hover {
   flex-direction: row;
 }
 .categories .hero-img .box-category .box-container .container-category .category {
-  font-size: 20px;
+  font-size: 19px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -257,10 +300,19 @@ nav .fa-bars:hover {
   .navbar-left {
     display: none;
   }
+  .navbar-left .navbar-nav .logout {
+    display: block;
+  }
   .categories .hero-img .box-category {
     top: 12vh;
     left: 0px;
     height: 88vh;
     width: 100%;
+  }
+  .navbar-top button {
+    display: block;
+  }
+  .navbar-top .box-account {
+    display: none;
   }
 }/*# sourceMappingURL=categoryPanel.css.map */
