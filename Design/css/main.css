@@ -678,7 +678,7 @@ header .fa-chevron-down:hover {
 }
 @media (max-width: 870px) {
   .login .container {
-    min-height: 800px;
+    min-height: 950px;
     height: 100vh;
   }
   .login .signin-signup {
