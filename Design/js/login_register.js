@@ -15,8 +15,10 @@ const loginFormElements = sign_in_form.querySelectorAll(
 	'.title, .underline, .input-field, label, .btn, .social-text, .social-media, .reset-text'
 )
 
+isReset = false
+
 sign_up_btn.addEventListener('click', () => {
-	hideReset()
+	if (isReset) hideReset()
 	container.classList.add('sign-up-mode')
 })
 
@@ -39,6 +41,7 @@ const removeAnimation = (elements, animation) => {
 }
 
 const hideReset = () => {
+	isReset = false
 	removeAnimation(loginFormElements, 'loginAnimationReverse')
 	removeAnimation(loginFormElements, 'loginAnimation')
 
@@ -53,6 +56,7 @@ const hideReset = () => {
 }
 
 reset_btn.addEventListener('click', () => {
+	isReset = true
 	removeAnimation(resetFormElements, 'loginAnimationReverse')
 	removeAnimation(resetFormElements, 'loginAnimation')
 
