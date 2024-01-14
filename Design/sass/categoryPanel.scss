@@ -147,7 +147,7 @@ nav {
 }
 
 .animation {
-	animation: itemAnimation .6s both;
+	animation: itemAnimation 0.6s both;
 }
 
 @keyframes itemAnimationReverse {
@@ -160,7 +160,7 @@ nav {
 }
 
 .animationReverse {
-	animation: itemAnimationReverse .6s both;
+	animation: itemAnimationReverse 0.6s both;
 }
 
 .navbar-top {
@@ -377,6 +377,28 @@ nav {
 
 		.box-account {
 			display: none;
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	.navbar-top {
+		.navbar-brand {
+			span {
+				font-size: 14px;
+			}
+		}
+	}
+
+	.categories {
+		.hero-img {
+			height: 117vh;
+			.box-category {
+				top: 12vh;
+				left: 0px;
+				height: 105vh;
+				width: 100%;
+			}
 		}
 	}
 }

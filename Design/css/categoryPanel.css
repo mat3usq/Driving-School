@@ -315,4 +315,18 @@ nav .fa-bars:hover {
   .navbar-top .box-account {
     display: none;
   }
+}
+@media (max-width: 400px) {
+  .navbar-top .navbar-brand span {
+    font-size: 14px;
+  }
+  .categories .hero-img {
+    height: 117vh;
+  }
+  .categories .hero-img .box-category {
+    top: 12vh;
+    left: 0px;
+    height: 105vh;
+    width: 100%;
+  }
 }/*# sourceMappingURL=categoryPanel.css.map */
