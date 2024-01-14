@@ -1,3 +1,84 @@
+.bounce-top {
+  display: block;
+  animation: bounce-top 2s infinite both;
+}
+
+@keyframes bounce-top {
+  0% {
+    transform: translateY(-45px);
+    animation-timing-function: ease-in;
+    opacity: 1;
+    color: #EF476F;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-24px);
+    animation-timing-function: ease-in;
+  }
+  65% {
+    transform: translateY(-12px);
+    animation-timing-function: ease-in;
+  }
+  25%, 55%, 75%, 87% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+.animation {
+  animation: itemAnimation 0.6s both;
+}
+
+.animationReverse {
+  animation: itemAnimationReverse 0.6s both;
+}
+
+@keyframes itemAnimation {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes itemAnimationReverse {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.loginAnimation {
+  animation: loginItemAnimation 0.6s forwards;
+}
+
+.loginAnimationReverse {
+  animation: loginItemAnimationReverse 0.6s forwards;
+}
+
+@keyframes loginItemAnimation {
+  from {
+    transform: translateX(-300%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes loginItemAnimationReverse {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-300%);
+  }
+}
 *,
 *::after,
 *::before {
@@ -30,7 +111,7 @@ h2 {
 }
 
 .shadow-bg {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.85);
 }
 
 .underline {
@@ -94,7 +175,7 @@ nav .fa-bars:hover {
 .navbar-left {
   top: 12vh;
   width: 300px;
-  height: 88vh;
+  height: 98vh;
 }
 .navbar-left .navbar-nav {
   display: flex;
@@ -117,30 +198,6 @@ nav .fa-bars:hover {
   font-size: 20px;
   margin-right: 10px;
   color: #4cc9f0;
-}
-
-@keyframes itemAnimation {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-.animation {
-  animation: itemAnimation 0.6s both;
-}
-
-@keyframes itemAnimationReverse {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-.animationReverse {
-  animation: itemAnimationReverse 0.6s both;
 }
 
 .navbar-top {
@@ -172,7 +229,7 @@ nav .fa-bars:hover {
 
 .categories .hero-img {
   position: relative;
-  height: 100vh;
+  height: 110vh;
   background-image: url("../img/backgroundPanelCategories.png");
   background-position: center;
   background-size: cover;
@@ -202,6 +259,7 @@ nav .fa-bars:hover {
   align-items: center;
 }
 .categories .hero-img .box-category .box-container .title {
+  margin-top: 100px;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 20px;

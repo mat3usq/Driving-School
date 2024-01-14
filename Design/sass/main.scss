@@ -260,7 +260,6 @@ html {
 
 .achievements {
 	i {
-		// margin-bottom: 10px;
 		font-size: 48px;
 		text-shadow: 0px 0px 20px $primary-color;
 		transition: 0.3s;
@@ -560,6 +559,11 @@ header {
 		z-index: 2;
 	}
 
+	form.reset-form {
+		z-index: 3;	
+		display: none;
+	}
+
 	.title {
 		font-size: 1.8rem;
 		color: $secondary-color;
@@ -603,7 +607,9 @@ header {
 		font-weight: 500;
 	}
 
-	.social-text {
+	.social-text,
+	.reset-text,
+	.back-login {
 		margin: 20px;
 		padding: 0.7rem 0;
 		font-size: 1rem;
