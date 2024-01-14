@@ -125,8 +125,7 @@ html {
 	font-size: 18px;
 	.price-box {
 		scale: 0.9;
-		margin: 20px;
-		padding: 30px;
+		padding: 20px;
 		background-color: rgba(9, 9, 56, 0.211);
 		box-shadow: 0px 0px 100px 5px #dad85e95;
 		border-radius: 40px;
@@ -261,7 +260,7 @@ html {
 
 .achievements {
 	i {
-		padding: 10px;
+		// margin-bottom: 10px;
 		font-size: 48px;
 		text-shadow: 0px 0px 20px $primary-color;
 		transition: 0.3s;
@@ -272,9 +271,10 @@ html {
 	}
 
 	.achievement-number {
-		font-size: 22px;
+		font-size: 18px;
 		font-weight: bold;
 		color: $secondary-color;
+		margin: 10px;
 	}
 
 	.achievement-text {
@@ -399,6 +399,7 @@ nav {
 	}
 
 	.navbar-brand {
+		font-size: 17px;
 		font-weight: bold;
 		color: $secondary-color;
 	}
