@@ -16,6 +16,7 @@ const loginFormElements = sign_in_form.querySelectorAll(
 )
 
 sign_up_btn.addEventListener('click', () => {
+	hideReset()
 	container.classList.add('sign-up-mode')
 })
 
@@ -37,6 +38,20 @@ const removeAnimation = (elements, animation) => {
 	})
 }
 
+const hideReset = () => {
+	removeAnimation(loginFormElements, 'loginAnimationReverse')
+	removeAnimation(loginFormElements, 'loginAnimation')
+
+	addAnimation(resetFormElements, 'loginAnimationReverse')
+	loginFormElements.forEach(e => (e.style.transform = 'translate(-300%)'))
+
+	setTimeout(() => {
+		reset_form.style.display = 'none'
+		sign_in_form.style.display = 'flex'
+		addAnimation(loginFormElements, 'loginAnimation')
+	}, 1000)
+}
+
 reset_btn.addEventListener('click', () => {
 	removeAnimation(resetFormElements, 'loginAnimationReverse')
 	removeAnimation(resetFormElements, 'loginAnimation')
@@ -52,17 +67,4 @@ reset_btn.addEventListener('click', () => {
 	}, 1000)
 })
 
-back_login_btn.addEventListener('click', () => {
-	removeAnimation(loginFormElements, 'loginAnimationReverse')
-	removeAnimation(loginFormElements, 'loginAnimation')
-
-	addAnimation(resetFormElements, 'loginAnimationReverse')
-
-	loginFormElements.forEach(e => (e.style.transform = 'translate(-300%)'))
-
-	setTimeout(() => {
-		reset_form.style.display = 'none'
-		sign_in_form.style.display = 'flex'
-		addAnimation(loginFormElements, 'loginAnimation')
-	}, 1000)
-})
+back_login_btn.addEventListener('click', hideReset)
