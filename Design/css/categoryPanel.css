@@ -235,6 +235,7 @@ nav .fa-bars:hover {
   background-size: cover;
   background-attachment: fixed;
   z-index: 0;
+  overflow: hidden;
 }
 .categories .hero-img .hero-shadow {
   position: absolute;
@@ -260,7 +261,7 @@ nav .fa-bars:hover {
 }
 .categories .hero-img .box-category .box-container .title {
   margin-top: 100px;
-  padding: 20px;
+  padding: 20px 10px;
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 20px;
   font-size: 20px;
