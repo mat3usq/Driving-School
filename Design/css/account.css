@@ -121,24 +121,23 @@ h2 {
   margin: 0 auto 30px;
 }
 
-.categories .hero-img {
+.account .hero-img {
   position: relative;
   height: 110vh;
-  background-image: url("../img/backgroundPanelCategories.png");
+  background-image: url("../img/backgroundAccount.png");
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
   z-index: 0;
   overflow: hidden;
 }
-.categories .hero-img .hero-shadow {
+.account .hero-img .hero-shadow {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: -5;
 }
-.categories .hero-img .box-category {
+.account .hero-img .box-account {
   position: absolute;
   top: 12vh;
   left: 150px;
@@ -148,46 +147,51 @@ h2 {
   justify-content: center;
   align-items: center;
 }
-.categories .hero-img .box-category .box-container {
+.account .hero-img .box-account .box-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 80%;
 }
-.categories .hero-img .box-category .box-container .title {
-  margin-top: 100px;
-  padding: 20px 10px;
-  background-color: rgba(0, 0, 0, 0.6);
+.account .hero-img .box-account .box-container .title {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 20px;
-  font-size: 20px;
+  font-size: 24px;
   font-style: italic;
   letter-spacing: 1px;
   text-align: center;
 }
-.categories .hero-img .box-category .box-container .container-category {
-  display: flex;
-  flex-direction: row;
-}
-.categories .hero-img .box-category .box-container .container-category .first-box,
-.categories .hero-img .box-category .box-container .container-category .second-box {
-  display: flex;
-  flex-direction: row;
-}
-.categories .hero-img .box-category .box-container .container-category .category {
-  font-size: 19px;
+.account .hero-img .box-account .box-container .container-account {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px;
-  padding: 15px;
-  background-color: rgba(0, 0, 0, 0.6);
+  width: 60%;
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 20px;
-}
-.categories .hero-img .box-category .box-container .container-category .category i {
-  color: #4cc9f0;
-  font-size: 36px;
   padding: 20px;
 }
-.categories .hero-img .box-category .box-container .container-category .category span {
+.account .hero-img .box-account .box-container .container-account .title-header {
+  letter-spacing: 2px;
+  font-size: 14px;
+  margin-bottom: 3px;
+  padding-left: 20px;
+}
+.account .hero-img .box-account .box-container .container-account .content {
+  font-weight: bold;
+}
+.account .hero-img .box-account .box-container .container-account hr {
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.821);
+  border-radius: 20px;
+  height: 5px;
+}
+.account .hero-img .box-account .box-container .container-account .account-details {
+  width: 80%;
+  font-size: 19px;
+  padding: 10px;
+}
+.account .hero-img .box-account .box-container .container-account .account-details span {
   color: #4cc9f0;
   font-weight: bold;
 }
@@ -242,29 +246,24 @@ h2 {
   color: antiquewhite;
 }
 
-@media (max-width: 1200px) {
-  .categories .hero-img .box-category .box-container .container-category .first-box,
-  .categories .hero-img .box-category .box-container .container-category .second-box {
+@media (max-width: 720px) {
+  .account .hero-img .box-account {
+    top: 12vh;
+    left: 0px;
+  }
+  .account .hero-img .box-account .box-container .title {
+    margin-top: 45px;
+  }
+  .account .hero-img .box-account .container-account {
+    min-width: 90%;
+  }
+  .account .hero-img .box-account .container-account .account-details {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    min-width: 100%;
   }
-}
-@media (max-width: 720px) {
-  .categories .hero-img .box-category {
-    top: 12vh;
-    left: 0px;
-    height: 88vh;
-    width: 100%;
+  .account .hero-img .box-account .container-account .account-details p {
+    text-align: center;
   }
-}
-@media (max-width: 400px) {
-  .categories .hero-img {
-    height: 117vh;
-  }
-  .categories .hero-img .box-category {
-    top: 12vh;
-    left: 0px;
-    height: 105vh;
-    width: 100%;
-  }
-}/*# sourceMappingURL=categoryPanel.css.map */
+}/*# sourceMappingURL=account.css.map */

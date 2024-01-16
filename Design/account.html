@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Category Panel</title>
+		<title>User Panel</title>
 
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
@@ -20,7 +20,7 @@
 		<script src="https://kit.fontawesome.com/30b5c3e166.js" crossorigin="anonymous"></script>
 
 		<link rel="stylesheet" href="css/navigation.css" />
-		<link rel="stylesheet" href="css/categoryPanel.css" />
+		<link rel="stylesheet" href="css/account.css" />
 	</head>
 	<body>
 		<nav class="navbar-top shadow-bg">
@@ -44,7 +44,7 @@
 					<div class="underline"></div>
 				</div>
 
-				<a data-aos="fade-right" data-aos-delay="100" class="nav-link active" href="categoryPanel.html"
+				<a data-aos="fade-right" data-aos-delay="100" class="nav-link" href="categoryPanel.html"
 					><i class="fa-solid fa-car-side"></i>Kategorie</a
 				>
 				<a data-aos="fade-right" data-aos-delay="150" class="nav-link" href="subjects.html"
@@ -59,7 +59,7 @@
 				<a data-aos="fade-right" data-aos-delay="300" class="nav-link" href="instructionExam.html"
 					><i class="fa-solid fa-wrench"></i>Instrukcja Egzaminu</a
 				>
-				<a data-aos="fade-right" data-aos-delay="350" class="nav-link" href="account.html"
+				<a data-aos="fade-right" data-aos-delay="350" class="nav-link active" href="account.html"
 					><i class="fa-regular fa-user"></i>Moje Konto</a
 				>
 				<a data-aos="fade-right" data-aos-delay="400" class="nav-link logout" href="main.html"
@@ -69,36 +69,31 @@
 		</nav>
 
 		<main>
-			<section class="categories">
+			<section class="account">
 				<div class="hero-img">
 					<div class="hero-shadow"></div>
-					<div class="box-category">
+					<div class="box-account">
 						<div class="box-container">
-							<p class="title" data-aos="fade-down" data-aos-delay="100">Twoje dostepne kategorie ponizej</p>
-							<div class="container-category">
-								<div data-aos="zoom-in" data-aos-delay="150" class="first-box">
-									<div class="category">
-										<i class="fa-solid fa-motorcycle"></i>
-										<p>Kategoria <span>A</span></p>
-									</div>
-									<div class="category">
-										<i class="fa-solid fa-car"></i>
-										<p>Kategoria <span>B</span></p>
-									</div>
-									<div class="category">
-										<i class="fa-solid fa-truck"></i>
-										<p>Kategoria <span>C</span></p>
-									</div>
+							<p class="title" data-aos="fade-down" data-aos-delay="100">Moje Konto</p>
+							<div data-aos="zoom-in" data-aos-delay="150" class="container-account">
+								<div class="account-details">
+									<p class="title-header">Imie oraz Nazwisko</p>
+									<p >Mekambe <span>Mekambusz</span></p>
 								</div>
-								<div data-aos="zoom-in" data-aos-delay="250" class="second-box">
-									<div class="category">
-										<i class="fa-solid fa-bus"></i>
-										<p>Kategoria <span>D</span></p>
-									</div>
-									<div class="category">
-										<i class="fa-solid fa-tractor"></i>
-										<p>Kategoria <span>T</span></p>
-									</div>
+								<hr />
+								<div class="account-details">
+									<p class="title-header">Wykupione Kategorie</p>
+									<p class="content">A, B, C, D, T</p>
+								</div>
+								<hr />
+								<div class="account-details">
+									<p class="title-header">Adres E-mail</p>
+									<p class="content">mekambe123<span>@wp</span>.pl</p>
+								</div>
+								<hr />
+								<div class="account-details">
+									<p class="title-header">Haslo</p>
+									<p class="content">czArnaMamba</p>
 								</div>
 							</div>
 						</div>

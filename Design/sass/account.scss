@@ -43,14 +43,14 @@ h2 {
 	margin: 0 auto 30px;
 }
 
-.categories {
+.account {
 	.hero-img {
 		position: relative;
 		height: 110vh;
-		background-image: url('../img/backgroundPanelCategories.png');
+		background-image: url('../img/backgroundAccount.png');
 		background-position: center;
 		background-size: cover;
-		background-attachment: fixed;
+		// background-attachment: fixed;
 		z-index: 0;
 		overflow: hidden;
 
@@ -58,11 +58,11 @@ h2 {
 			position: absolute;
 			width: 100%;
 			height: 100%;
-			background-color: rgba(0, 0, 0, 0.25);
+			background-color: rgba(0, 0, 0, 0.4);
 			z-index: -5;
 		}
 
-		.box-category {
+		.box-account {
 			position: absolute;
 			top: 12vh;
 			left: 150px;
@@ -76,43 +76,49 @@ h2 {
 				display: flex;
 				flex-direction: column;
 				align-items: center;
+				width: 80%;
 
 				.title {
-					margin-top: 100px;
-					padding: 20px 10px;
-					background-color: rgba(0, 0, 0, 0.6);
+					padding: 20px;
+					background-color: rgba(0, 0, 0, 0.7);
 					border-radius: 20px;
-					font-size: 20px;
+					font-size: 24px;
 					font-style: italic;
 					letter-spacing: 1px;
 					text-align: center;
 				}
 
-				.container-category {
+				.container-account {
 					display: flex;
-					flex-direction: row;
+					flex-direction: column;
+					align-items: center;
+					width: 60%;
+					background-color: rgba(0, 0, 0, 0.7);
+					border-radius: 20px;
+					padding: 20px;
 
-					.first-box,
-					.second-box {
-						display: flex;
-						flex-direction: row;
+					.title-header {
+						letter-spacing: 2px;
+						font-size: 14px;
+						margin-bottom: 3px;
+						padding-left: 20px;
 					}
 
-					.category {
-						font-size: 19px;
-						display: flex;
-						flex-direction: column;
-						align-items: center;
-						margin: 20px;
-						padding: 15px;
-						background-color: rgba(0, 0, 0, 0.6);
-						border-radius: 20px;
+					.content {
+						font-weight: bold;
+					}
 
-						i {
-							color: $category-icon;
-							font-size: 36px;
-							padding: 20px;
-						}
+					hr {
+						width: 80%;
+						background-color: rgba(255, 255, 255, 0.821);
+						border-radius: 20px;
+						height: 5px;
+					}
+
+					.account-details {
+						width: 80%;
+						font-size: 19px;
+						padding: 10px;
 
 						span {
 							color: $category-icon;
@@ -183,46 +189,33 @@ h2 {
 	}
 }
 
-@media (max-width: 1200px) {
-	.categories {
+@media (max-width: 720px) {
+	.account {
 		.hero-img {
-			.box-category {
+			.box-account {
+				top: 12vh;
+				left: 0px;
+
 				.box-container {
-					.container-category {
-						.first-box,
-						.second-box {
-							display: flex;
-							flex-direction: column;
+					.title {
+						margin-top: 45px;
+					}
+				}
+
+				.container-account {
+					min-width: 90%;
+
+					.account-details {
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						min-width: 100%;
+
+						p {
+							text-align: center;
 						}
 					}
 				}
-			}
-		}
-	}
-}
-
-@media (max-width: 720px) {
-	.categories {
-		.hero-img {
-			.box-category {
-				top: 12vh;
-				left: 0px;
-				height: 88vh;
-				width: 100%;
-			}
-		}
-	}
-}
-
-@media (max-width: 400px) {
-	.categories {
-		.hero-img {
-			height: 117vh;
-			.box-category {
-				top: 12vh;
-				left: 0px;
-				height: 105vh;
-				width: 100%;
 			}
 		}
 	}
