@@ -131,7 +131,7 @@ nav .fa-bars:hover {
 }
 
 .navbar-left {
-  top: 12vh;
+  top: 11.9vh;
   width: 300px;
   height: 98vh;
 }
@@ -139,13 +139,13 @@ nav .fa-bars:hover {
   display: flex;
   flex-direction: column;
 }
-.navbar-left .navbar-nav .current-category .title {
+.navbar-left .navbar-nav .title {
   font-size: 18px;
   font-style: italic;
   letter-spacing: 2px;
   text-align: center;
 }
-.navbar-left .navbar-nav .current-category .underline {
+.navbar-left .navbar-nav .underline {
   width: 250px;
   border-radius: 5px;
 }
@@ -193,77 +193,6 @@ nav .fa-bars:hover {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-}
-
-.categories .hero-img {
-  position: relative;
-  height: 110vh;
-  background-image: url("../img/backgroundPanelCategories.png");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  z-index: 0;
-  overflow: hidden;
-}
-.categories .hero-img .hero-shadow {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.25);
-  z-index: -5;
-}
-.categories .hero-img .box-category {
-  position: absolute;
-  top: 12vh;
-  left: 150px;
-  height: 88vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.categories .hero-img .box-category .box-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.categories .hero-img .box-category .box-container .title {
-  margin-top: 100px;
-  padding: 20px 10px;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 20px;
-  font-size: 20px;
-  font-style: italic;
-  letter-spacing: 1px;
-  text-align: center;
-}
-.categories .hero-img .box-category .box-container .container-category {
-  display: flex;
-  flex-direction: row;
-}
-.categories .hero-img .box-category .box-container .container-category .first-box,
-.categories .hero-img .box-category .box-container .container-category .second-box {
-  display: flex;
-  flex-direction: row;
-}
-.categories .hero-img .box-category .box-container .container-category .category {
-  font-size: 19px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px;
-  padding: 15px;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 20px;
-}
-.categories .hero-img .box-category .box-container .container-category .category i {
-  color: #4cc9f0;
-  font-size: 36px;
-  padding: 20px;
-}
-.categories .hero-img .box-category .box-container .container-category .category span {
-  color: #4cc9f0;
-  font-weight: bold;
 }
 
 @media (max-width: 720px) {

@@ -17,7 +17,8 @@ document.addEventListener('DOMContentLoaded', function () {
 	menuBars.addEventListener('click', () => {
 		isMenuOpen = !isMenuOpen
 		if (isMenuOpen) {
-			navBar.classList.add('show')
+			navBar.classList.remove('animationReverse')
+			navBar.classList.add('show', 'animation')
 			animateLinks('animation')
 		} else {
 			animateLinks('animationReverse')
@@ -26,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				'animationend',
 				() => {
 					if (!isMenuOpen) {
-						navBar.classList.remove('show')
+						navBar.classList.remove('show', 'animation')
 					}
 				},
 				{ once: true }
@@ -51,6 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	window.addEventListener('resize', () => {
 		if (!isMenuOpen) {
+			navBar.classList.add('animation')
 			navLinks.forEach(item => {
 				item.classList.remove('animation', 'animationReverse')
 				item.style.animationDelay = '0s'
