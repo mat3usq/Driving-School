@@ -316,3 +316,18 @@ h2 {
 		height: 105vh;
 	}
 }
+
+@media (max-width: 400px) {
+	.subject {
+		.hero-img {
+			height: 150vh;
+			.box-subject {
+				height: 130vh;
+			}
+		}
+	}
+
+	.navbar-left {
+		height: 138vh;
+	}
+}

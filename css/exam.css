@@ -382,9 +382,9 @@ h2 {
 }
 @media (max-width: 400px) {
   .exam .hero-img {
-    height: 174vh;
+    height: 190vh;
   }
   .navbar-left {
-    height: 162vh;
+    height: 178vh;
   }
 }/*# sourceMappingURL=exam.css.map */
