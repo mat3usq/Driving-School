@@ -431,12 +431,12 @@ h2 {
     height: 183vh;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 450px) {
   .examResult .hero-img {
-    height: 200vh;
+    height: 207vh;
   }
   .navbar-left {
-    height: 208vh;
+    height: 215vh;
   }
 }
 @media (max-width: 390px) {
