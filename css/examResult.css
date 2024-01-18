@@ -393,6 +393,9 @@ h2 {
   }
 }
 @media (max-width: 700px) {
+  .examResult .hero-img {
+    height: 190vh;
+  }
   .examResult .hero-img .box-examResult .box-container .header-examResult {
     flex-direction: column;
   }
@@ -410,10 +413,13 @@ h2 {
     flex-direction: column;
     align-items: center;
   }
+  .navbar-left {
+    height: 178vh;
+  }
 }
 @media (max-width: 500px) {
   .examResult .hero-img {
-    height: 190vh;
+    height: 195vh;
   }
   .examResult .hero-img .box-examResult .box-container .container-examResult {
     width: 90%;
@@ -422,7 +428,15 @@ h2 {
     flex-direction: column;
   }
   .navbar-left {
-    height: 178vh;
+    height: 183vh;
+  }
+}
+@media (max-width: 420px) {
+  .examResult .hero-img {
+    height: 200vh;
+  }
+  .navbar-left {
+    height: 208vh;
   }
 }
 @media (max-width: 390px) {

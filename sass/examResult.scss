@@ -370,6 +370,7 @@ h2 {
 @media (max-width: 700px) {
 	.examResult {
 		.hero-img {
+			height: 190vh;
 			.box-examResult {
 				.box-container {
 					.header-examResult {
@@ -394,12 +395,16 @@ h2 {
 			}
 		}
 	}
+
+	.navbar-left {
+		height: 178vh;
+	}
 }
 
 @media (max-width: 500px) {
 	.examResult {
 		.hero-img {
-			height: 190vh;
+			height: 195vh;
 			.box-examResult {
 				.box-container {
 					.container-examResult {
@@ -419,22 +424,21 @@ h2 {
 	}
 
 	.navbar-left {
-		height: 178vh;
+		height: 183vh;
 	}
 }
 
-// @media (max-width: 400px) {
-// 	.examResult {
-// 		.hero-img {
-// 			height: 200vh;
-// 		}
-// 	}
+@media (max-width: 420px) {
+	.examResult {
+		.hero-img {
+			height: 200vh;
+		}
+	}
 
-// 	.navbar-left {
-// 		height: 208vh;
-// 	}
-// }
-
+	.navbar-left {
+		height: 208vh;
+	}
+}
 
 @media (max-width: 390px) {
 	.examResult {
