@@ -121,74 +121,83 @@ h2 {
   margin: 0 auto 30px;
 }
 
-.exam .hero-img {
+.navbar-left {
+  height: 114vh;
+}
+
+.test .hero-img {
   position: relative;
-  height: 110vh;
-  background-image: url("../img/backgroundExam.png");
+  height: 126vh;
+  background-image: url("../img/backgroundTest.png");
   background-position: center;
   background-size: cover;
   z-index: 0;
   overflow: hidden;
 }
-.exam .hero-img .hero-shadow {
+.test .hero-img .hero-shadow {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.2);
   z-index: -5;
 }
-.exam .hero-img .box-exam {
+.test .hero-img .box-test {
   position: absolute;
   top: 12vh;
   left: 150px;
   height: 95vh;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
-.exam .hero-img .box-exam .box-container {
+.test .hero-img .box-test .box-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 10px auto;
   width: 80%;
 }
-.exam .hero-img .box-exam .box-container .header-exam {
+.test .hero-img .box-test .box-container .header-test {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.85);
   border-radius: 20px;
   font-size: 18px;
   font-style: italic;
   letter-spacing: 1px;
   text-align: center;
-  margin: 20px;
+  margin: 10px;
   width: 80%;
 }
-.exam .hero-img .box-exam .box-container .header-exam span {
+.test .hero-img .box-test .box-container .header-test div {
+  display: flex;
+  flex-direction: row;
+}
+.test .hero-img .box-test .box-container .header-test span {
   color: #4cc9f0;
   font-size: 22px;
   font-style: normal;
   font-weight: bold;
 }
-.exam .hero-img .box-exam .box-container .header-exam p {
+.test .hero-img .box-test .box-container .header-test i {
+  font-size: 30px;
   margin: 10px;
 }
-.exam .hero-img .box-exam .box-container .container-exam {
+.test .hero-img .box-test .box-container .header-test p {
+  font-size: 20px;
+  margin: 10px;
+}
+.test .hero-img .box-test .box-container .container-test {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 80%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.85);
   border-radius: 20px;
   padding: 30px;
 }
-.exam .hero-img .box-exam .box-container .container-exam .exam-info {
+.test .hero-img .box-test .box-container .container-test .test-info {
   display: flex;
   flex-direction: row;
   align-content: space-between;
@@ -196,60 +205,70 @@ h2 {
   padding: 20px;
   align-items: stretch;
 }
-.exam .hero-img .box-exam .box-container .container-exam .exam-info .box-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.exam .hero-img .box-exam .box-container .container-exam .exam-info .box-info .info-container {
-  display: flex;
-  flex-direction: row;
-}
-.exam .hero-img .box-exam .box-container .container-exam .exam-info .box-info .info-container div {
-  margin: 10px;
-  text-align: center;
-}
-.exam .hero-img .box-exam .box-container .container-exam .exam-info .box-info .info {
-  font-style: italic;
-  letter-spacing: 1px;
-  text-align: center;
-}
-.exam .hero-img .box-exam .box-container .container-exam .exam-info .box-info .info .counter {
-  font-size: 22px;
-  font-style: normal;
-}
-.exam .hero-img .box-exam .box-container .container-exam .exam-info .box-info .timeButton {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.exam .hero-img .box-exam .box-container .container-exam .exam-info img {
-  width: 50%;
+.test .hero-img .box-test .box-container .container-test .test-info img {
+  width: 60%;
   border-radius: 20px;
   margin: 10px;
 }
-.exam .hero-img .box-exam .box-container .container-exam .exam-info span {
+.test .hero-img .box-test .box-container .container-test #wrong {
+  display: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 22px;
+  color: #EF476F;
+  text-align: center;
+}
+.test .hero-img .box-test .box-container .container-test #correct {
+  display: none;
+  font-weight: bold;
+  letter-spacing: 1px;
   font-size: 22px;
   color: springgreen;
-  font-weight: bold;
+  text-align: center;
 }
-.exam .hero-img .box-exam .box-container .container-exam .exam-info p {
-  font-size: 18px;
-}
-.exam .hero-img .box-exam .box-container .container-exam .question {
+.test .hero-img .box-test .box-container .container-test .question {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   font-size: 20px;
+  margin: 10px 30px;
 }
-.exam .hero-img .box-exam .box-container .container-exam .question .content {
+.test .hero-img .box-test .box-container .container-test .question .button-box {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.test .hero-img .box-test .box-container .container-test .question .button-box .first-box,
+.test .hero-img .box-test .box-container .container-test .question .button-box .second-box {
+  display: flex;
+  flex-direction: row;
+}
+.test .hero-img .box-test .box-container .container-test .question .info-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.test .hero-img .box-test .box-container .container-test .question .info-container .explain {
+  margin-left: 20px;
+  transition: 0.3s;
+  display: none;
+}
+.test .hero-img .box-test .box-container .container-test .question .info-container .explain .content {
+  font-weight: normal;
+}
+.test .hero-img .box-test .box-container .container-test .question span {
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: springgreen;
+}
+.test .hero-img .box-test .box-container .container-test .question .content {
   font-weight: bold;
 }
-.exam .hero-img .box-exam .box-container .container-exam .question button {
-  width: 100px;
+.test .hero-img .box-test .box-container .container-test .question button,
+.test .hero-img .box-test .box-container .container-test .question a {
   border: none;
   outline: none;
   height: 49px;
@@ -259,21 +278,28 @@ h2 {
   font-weight: 600;
   transition: 0.5s;
   margin: 10px 20px;
+  padding: 10px 20px;
+  background: transparent;
 }
-.exam .hero-img .box-exam .box-container .container-exam .question button:not(:disabled) {
+.test .hero-img .box-test .box-container .container-test .question button i,
+.test .hero-img .box-test .box-container .container-test .question a i {
+  color: aliceblue;
+}
+.test .hero-img .box-test .box-container .container-test .question button,
+.test .hero-img .box-test .box-container .container-test .question a:not(:disabled) {
   cursor: pointer;
 }
-.exam .hero-img .box-exam .box-container .container-exam .question .yes {
-  background-color: springgreen;
-}
-.exam .hero-img .box-exam .box-container .container-exam .question .next {
-  width: 180px;
+.test .hero-img .box-test .box-container .container-test .question .next,
+.test .hero-img .box-test .box-container .container-test .question .back {
   background-color: #4d84e2;
 }
-.exam .hero-img .box-exam .box-container .container-exam .question .no {
-  background-color: #EF476F;
+.test .hero-img .box-test .box-container .container-test .question #yes,
+.test .hero-img .box-test .box-container .container-test .question #no {
+  color: #4cc9f0;
+  padding: 5px 20px;
+  border: 2px solid aliceblue;
 }
-.exam .hero-img .box-exam .box-container .container-exam .question button:hover {
+.test .hero-img .box-test .box-container .container-test .question button:hover {
   scale: 1.1;
 }
 
@@ -341,55 +367,62 @@ h2 {
   .navbar-top .box-account {
     display: none;
   }
-  .exam .hero-img .box-exam {
+  .test .hero-img .box-test {
     display: block;
     top: 12vh;
     left: 0;
   }
-  .exam .hero-img .box-exam .box-container {
+  .test .hero-img .box-test .box-container {
     width: 95%;
   }
-  .exam .hero-img .box-exam .box-container .container-exam,
-  .exam .hero-img .box-exam .box-container .header-exam {
+  .test .hero-img .box-test .box-container .container-test,
+  .test .hero-img .box-test .box-container .header-test {
     width: 100%;
   }
-  .exam .hero-img .box-exam .box-container .container-exam span,
-  .exam .hero-img .box-exam .box-container .header-exam span {
+  .test .hero-img .box-test .box-container .container-test span,
+  .test .hero-img .box-test .box-container .header-test span {
     font-size: 20px;
+  }
+  .test .hero-img .box-test .box-container .container-test .test-info img {
+    width: 60%;
+  }
+  .test .hero-img .box-test .box-container .container-test .question .info-container {
+    flex-direction: column;
   }
 }
 @media (max-width: 700px) {
-  .exam .hero-img {
-    height: 150vh;
+  .test .hero-img {
+    height: 140vh;
   }
-  .exam .hero-img .box-exam .box-container .container-exam .exam-info {
+  .test .hero-img .box-test .box-container .container-test .test-info {
     flex-direction: column;
   }
-  .exam .hero-img .box-exam .box-container .container-exam .exam-info img {
+  .test .hero-img .box-test .box-container .container-test .test-info img {
     width: 100%;
     padding: 0;
     margin: 0;
   }
-  .exam .hero-img .box-exam .box-container .header-exam {
+  .test .hero-img .box-test .box-container .header-test {
     flex-direction: column;
   }
   .navbar-left {
-    height: 138vh;
+    height: 128vh;
   }
 }
 @media (max-width: 500px) {
-  .exam .hero-img {
-    height: 150vh;
+  .test .hero-img .box-test .box-container .container-test .question .button-box .first-box,
+  .test .hero-img .box-test .box-container .container-test .question .button-box .second-box {
+    flex-direction: column;
   }
-  .navbar-left {
-    height: 138vh;
+  .test .hero-img .box-test .box-container .container-test .question .button-box .first-box {
+    flex-direction: column-reverse;
   }
 }
 @media (max-width: 400px) {
-  .exam .hero-img {
-    height: 190vh;
+  .test .hero-img {
+    height: 175vh;
   }
   .navbar-left {
-    height: 178vh;
+    height: 163vh;
   }
-}/*# sourceMappingURL=examNormalQuestion.css.map */
+}/*# sourceMappingURL=testNormalQuestion.css.map */

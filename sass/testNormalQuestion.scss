@@ -43,11 +43,15 @@ h2 {
 	margin: 0 auto 30px;
 }
 
-.exam {
+.navbar-left {
+	height: 114vh;
+}
+
+.test {
 	.hero-img {
 		position: relative;
-		height: 110vh;
-		background-image: url('../img/backgroundExam.png');
+		height: 126vh;
+		background-image: url('../img/backgroundTest.png');
 		background-position: center;
 		background-size: cover;
 		// background-attachment: fixed;
@@ -58,20 +62,16 @@ h2 {
 			position: absolute;
 			width: 100%;
 			height: 100%;
-			background-color: rgba(0, 0, 0, 0.1);
+			background-color: rgba(0, 0, 0, 0.2);
 			z-index: -5;
 		}
 
-		.box-exam {
+		.box-test {
 			position: absolute;
 			top: 12vh;
 			left: 150px;
 			height: 95vh;
 			width: 100%;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
 
 			.box-container {
 				display: flex;
@@ -80,20 +80,25 @@ h2 {
 				margin: 10px auto;
 				width: 80%;
 
-				.header-exam {
+				.header-test {
 					display: flex;
 					flex-direction: row;
 					justify-content: center;
 					align-items: center;
 					padding: 20px;
-					background-color: rgba(0, 0, 0, 0.7);
+					background-color: rgba(0, 0, 0, 0.85);
 					border-radius: 20px;
 					font-size: 18px;
 					font-style: italic;
 					letter-spacing: 1px;
 					text-align: center;
-					margin: 20px;
+					margin: 10px;
 					width: 80%;
+
+					div {
+						display: flex;
+						flex-direction: row;
+					}
 
 					span {
 						color: $category-icon;
@@ -102,21 +107,27 @@ h2 {
 						font-weight: bold;
 					}
 
+					i {
+						font-size: 30px;
+						margin: 10px;
+					}
+
 					p {
+						font-size: 20px;
 						margin: 10px;
 					}
 				}
 
-				.container-exam {
+				.container-test {
 					display: flex;
 					flex-direction: column;
 					align-items: center;
 					width: 80%;
-					background-color: rgba(0, 0, 0, 0.7);
+					background-color: rgba(0, 0, 0, 0.85);
 					border-radius: 20px;
 					padding: 30px;
 
-					.exam-info {
+					.test-info {
 						display: flex;
 						flex-direction: row;
 						align-content: space-between;
@@ -124,55 +135,29 @@ h2 {
 						padding: 20px;
 						align-items: stretch;
 
-						.box-info {
-							display: flex;
-							flex-direction: column;
-							align-items: center;
-							justify-content: center;
-
-							.info-container {
-								display: flex;
-								flex-direction: row;
-
-								div {
-									margin: 10px;
-									text-align: center;
-								}
-							}
-
-							.info {
-								font-style: italic;
-								letter-spacing: 1px;
-								text-align: center;
-
-								.counter {
-									font-size: 22px;
-									font-style: normal;
-								}
-							}
-
-							.timeButton {
-								display: flex;
-								flex-direction: column;
-								align-items: center;
-							}
-						}
-
 						img {
-							width: 50%;
+							width: 60%;
 							border-radius: 20px;
 							margin: 10px;
 						}
+					}
 
-						span {
-							font-size: 22px;
-							color: $icon-color;
-							font-weight: bold;
-						}
+					#wrong {
+						display: none;
+						font-weight: bold;
+						letter-spacing: 1px;
+						font-size: 22px;
+						color: $primary-color;
+						text-align: center;
+					}
 
-						p {
-							font-size: 18px;
-						}
+					#correct {
+						display: none;
+						font-weight: bold;
+						letter-spacing: 1px;
+						font-size: 22px;
+						color: $icon-color;
+						text-align: center;
 					}
 
 					.question {
@@ -182,13 +167,48 @@ h2 {
 						justify-content: center;
 						text-align: center;
 						font-size: 20px;
+						margin: 10px 30px;
+
+						.button-box {
+							margin: 10px;
+							display: flex;
+							flex-direction: row;
+
+							.first-box,
+							.second-box {
+								display: flex;
+								flex-direction: row;
+							}
+						}
+
+						.info-container {
+							display: flex;
+							flex-direction: row;
+							align-items: center;
+							justify-content: center;
+
+							.explain {
+								margin-left: 20px;
+								transition: 0.3s;
+								display: none;
+								.content {
+									font-weight: normal;
+								}
+							}
+						}
+
+						span {
+							font-weight: bold;
+							letter-spacing: 1px;
+							color: $icon-color;
+						}
 
 						.content {
 							font-weight: bold;
 						}
 
-						button {
-							width: 100px;
+						button,
+						a {
 							border: none;
 							outline: none;
 							height: 49px;
@@ -198,23 +218,29 @@ h2 {
 							font-weight: 600;
 							transition: 0.5s;
 							margin: 10px 20px;
+							padding: 10px 20px;
+							background: transparent;
+
+							i {
+								color: $text-color;
+							}
 						}
 
-						button:not(:disabled) {
+						button,
+						a:not(:disabled) {
 							cursor: pointer;
 						}
 
-						.yes {
-							background-color: $icon-color;
-						}
-
-						.next {
-							width: 180px;
+						.next,
+						.back {
 							background-color: $btn-bg-color;
 						}
 
-						.no {
-							background-color: $primary-color;
+						#yes,
+						#no {
+							color: $category-icon;
+							padding: 5px 20px;
+							border: 2px solid $text-color;
 						}
 
 						button:hover {
@@ -307,19 +333,32 @@ h2 {
 		}
 	}
 
-	.exam {
+	.test {
 		.hero-img {
-			.box-exam {
+			.box-test {
 				display: block;
 				top: 12vh;
 				left: 0;
 				.box-container {
 					width: 95%;
-					.container-exam,
-					.header-exam {
+					.container-test,
+					.header-test {
 						width: 100%;
 						span {
 							font-size: 20px;
+						}
+					}
+
+					.container-test {
+						.test-info {
+							img {
+								width: 60%;
+							}
+						}
+						.question {
+							.info-container {
+								flex-direction: column;
+							}
 						}
 					}
 				}
@@ -329,13 +368,13 @@ h2 {
 }
 
 @media (max-width: 700px) {
-	.exam {
+	.test {
 		.hero-img {
-			height: 150vh;
-			.box-exam {
+			height: 140vh;
+			.box-test {
 				.box-container {
-					.container-exam {
-						.exam-info {
+					.container-test {
+						.test-info {
 							flex-direction: column;
 							img {
 								width: 100%;
@@ -345,7 +384,7 @@ h2 {
 						}
 					}
 
-					.header-exam {
+					.header-test {
 						flex-direction: column;
 					}
 				}
@@ -354,30 +393,43 @@ h2 {
 	}
 
 	.navbar-left {
-		height: 138vh;
+		height: 128vh;
 	}
 }
 
 @media (max-width: 500px) {
-	.exam {
+	.test {
 		.hero-img {
-			height: 150vh;
-		}
-	}
+			.box-test {
+				.box-container {
+					.container-test {
+						.question {
+							.button-box {
+								.first-box,
+								.second-box {
+									flex-direction: column;
+								}
 
-	.navbar-left {
-		height: 138vh;
+								.first-box {
+									flex-direction: column-reverse;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
 @media (max-width: 400px) {
-	.exam {
+	.test {
 		.hero-img {
-			height: 190vh;
+			height: 175vh;
 		}
 	}
 
 	.navbar-left {
-		height: 178vh;
+		height: 163vh;
 	}
 }
