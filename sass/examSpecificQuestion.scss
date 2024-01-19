@@ -44,13 +44,13 @@ h2 {
 }
 
 .navbar-left {
-	height: 108vh;
+	height: 118vh;
 }
 
 .exam {
 	.hero-img {
 		position: relative;
-		height: 120vh;
+		height: 130vh;
 		background-image: url('../img/backgroundExam.png');
 		background-position: center;
 		background-size: cover;
@@ -187,7 +187,7 @@ h2 {
 							font-weight: bold;
 						}
 
-						.button-box{
+						.button-box {
 							display: flex;
 							flex-direction: column;
 						}
@@ -199,11 +199,14 @@ h2 {
 							border-radius: 49px;
 							color: $text-color;
 							background-color: transparent;
-							cursor: pointer;
 							transition: 0.5s;
 							margin: 10px 20px;
 							padding: 0px 10px;
 							position: relative;
+						}
+
+						button:not(:disabled) {
+							cursor: pointer;
 						}
 
 						.answer:nth-child(1)::before {
@@ -417,23 +420,23 @@ h2 {
 @media (max-width: 500px) {
 	.exam {
 		.hero-img {
-			height: 140vh;
+			height: 150vh;
 		}
 	}
 
 	.navbar-left {
-		height: 128vh;
+		height: 138vh;
 	}
 }
 
 @media (max-width: 400px) {
 	.exam {
 		.hero-img {
-			height: 190vh;
+			height: 195vh;
 		}
 	}
 
 	.navbar-left {
-		height: 178vh;
+		height: 183vh;
 	}
 }

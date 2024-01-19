@@ -257,9 +257,11 @@ h2 {
   color: aliceblue;
   text-transform: uppercase;
   font-weight: 600;
-  cursor: pointer;
   transition: 0.5s;
   margin: 10px 20px;
+}
+.exam .hero-img .box-exam .box-container .container-exam .question button:not(:disabled) {
+  cursor: pointer;
 }
 .exam .hero-img .box-exam .box-container .container-exam .question .yes {
   background-color: springgreen;
