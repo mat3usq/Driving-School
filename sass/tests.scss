@@ -110,6 +110,7 @@ h2 {
 					background-color: rgba(0, 0, 0, 0.8);
 					border-radius: 20px;
 					padding: 20px;
+					margin-bottom: 20px;
 
 					.title-header {
 						letter-spacing: 2px;
@@ -142,6 +143,8 @@ h2 {
 						border-radius: 20px;
 						margin-top: 15px;
 						transition: transform 0.3s;
+						text-decoration: none;
+						color: $text-color;
 
 						.container-info,
 						.container-stats {
@@ -160,6 +163,7 @@ h2 {
 								height: 16px;
 								border-radius: 20px;
 								border: 2px solid $text-color;
+								overflow: hidden;
 
 								.progres-bar {
 									height: 12px;
@@ -190,6 +194,7 @@ h2 {
 					}
 
 					.tests-details:hover {
+						cursor: pointer;
 						transform: scale(1.05);
 					}
 				}

@@ -182,6 +182,7 @@ h2 {
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: 20px;
   padding: 20px;
+  margin-bottom: 20px;
 }
 .tests .hero-img .box-tests .box-container .container-tests .title-header {
   letter-spacing: 2px;
@@ -211,6 +212,8 @@ h2 {
   border-radius: 20px;
   margin-top: 15px;
   transition: transform 0.3s;
+  text-decoration: none;
+  color: aliceblue;
 }
 .tests .hero-img .box-tests .box-container .container-tests .tests-details .container-info,
 .tests .hero-img .box-tests .box-container .container-tests .tests-details .container-stats {
@@ -227,6 +230,7 @@ h2 {
   height: 16px;
   border-radius: 20px;
   border: 2px solid aliceblue;
+  overflow: hidden;
 }
 .tests .hero-img .box-tests .box-container .container-tests .tests-details .container-stats .progres-box .progres-bar {
   height: 12px;
@@ -250,6 +254,7 @@ h2 {
   border-left: 2px solid black;
 }
 .tests .hero-img .box-tests .box-container .container-tests .tests-details:hover {
+  cursor: pointer;
   transform: scale(1.05);
 }
 

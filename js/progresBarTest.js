@@ -33,7 +33,7 @@ function updateProgressBars() {
 		} else if (progress < 60) {
 			progressBar.style.backgroundColor = '#0000ff' // Głęboki niebieski
 		} else if (progress < 65) {
-			progressBar.style.backgroundColor = '#4b0082' // Indygo
+			progressBar.style.backgroundColor = '#771eb6' // Indygo
 		} else if (progress < 70) {
 			progressBar.style.backgroundColor = '#800080' // Purpurowy
 		} else if (progress < 75) {

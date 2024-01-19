@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Category Panel</title>
+		<title>User Panel</title>
 
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
@@ -19,8 +19,8 @@
 
 		<script src="https://kit.fontawesome.com/30b5c3e166.js" crossorigin="anonymous"></script>
 
-		<link rel="stylesheet" href="css/categoryPanel.css" />
 		<link rel="stylesheet" href="css/navigation.css" />
+		<link rel="stylesheet" href="css/examNormalQuestion.css" />
 	</head>
 	<body>
 		<nav class="navbar-top shadow-bg">
@@ -42,7 +42,7 @@
 				<p class="title">Kategoria B</p>
 				<div class="underline"></div>
 
-				<a data-aos="fade-right" data-aos-delay="100" class="nav-link active" href="categoryPanel.html"
+				<a data-aos="fade-right" data-aos-delay="100" class="nav-link" href="categoryPanel.html"
 					><i class="fa-solid fa-car-side"></i>Kategorie</a
 				>
 				<a data-aos="fade-right" data-aos-delay="150" class="nav-link" href="subjects.html"
@@ -51,7 +51,7 @@
 				<a data-aos="fade-right" data-aos-delay="200" class="nav-link" href="tests.html"
 					><i class="fa-solid fa-person-chalkboard"></i>Nauka Testów</a
 				>
-				<a data-aos="fade-right" data-aos-delay="250" class="nav-link" href="examNormalQuestion.html"
+				<a data-aos="fade-right" data-aos-delay="250" class="nav-link active" href="examNormalQuestion.html"
 					><i class="fa-solid fa-file-pen"></i>Egzamin</a
 				>
 				<a data-aos="fade-right" data-aos-delay="300" class="nav-link" href="instructionExam.html"
@@ -67,37 +67,47 @@
 		</nav>
 
 		<main>
-			<section class="categories">
+			<section class="exam">
 				<div class="hero-img">
 					<div class="hero-shadow"></div>
-					<div class="box-category">
+					<div class="box-exam">
 						<div class="box-container">
-							<p class="title" data-aos="fade-down" data-aos-delay="100">Twoje dostepne kategorie ponizej</p>
-							<div class="container-category">
-								<div data-aos="zoom-in" data-aos-delay="150" class="first-box">
-									<div class="category">
-										<i class="fa-solid fa-motorcycle"></i>
-										<p>Kategoria <span>A</span></p>
-									</div>
-									<div class="category">
-										<i class="fa-solid fa-car"></i>
-										<p>Kategoria <span>B</span></p>
-									</div>
-									<div class="category">
-										<i class="fa-solid fa-truck"></i>
-										<p>Kategoria <span>C</span></p>
+							<div class="header-exam">
+								<p>Trwa Ezamin <span>Kategoria B</span></p>
+								<p>Zadanie za <span>2 Punkty</span></p>
+								<p>Czas do konca <span>22:06</span></p>
+							</div>
+
+							<div class="container-exam">
+								<div class="exam-info">
+									<img src="img/imgNormalQuestion.png" alt="korytarz zycia" />
+									<div class="box-info">
+										<div class="info-container">
+											<div>
+												<p class="info">Czesc Podstawowa</p>
+												<p class="counter"><span>11</span> /20</p>
+											</div>
+											<div>
+												<p class="info">Czesc Specjalistyczna</p>
+												<p class="counter"><span>0</span> /12</p>
+											</div>
+										</div>
+										<div class="timeButton">
+											<p class="info">Czas na odpowiedz</p>
+											<span>6 s</span>
+										</div>
 									</div>
 								</div>
-								<div data-aos="zoom-in" data-aos-delay="250" class="second-box">
-									<div class="category">
-										<i class="fa-solid fa-bus"></i>
-										<p>Kategoria <span>D</span></p>
+								<form class="question" action="examSpecificQuestion.html">
+									<p class="content">
+										Czy w tej sytuacji bezposrednio za pojazdem uprzywilejowanym dozwolone jest poruszanie sie
+										dowolonych pojazdow?
+									</p>
+									<div class="button-box">
+										<button class="no">Nie</button><button class="next">Nastepne</button
+										><button class="yes">Tak</button>
 									</div>
-									<div class="category">
-										<i class="fa-solid fa-tractor"></i>
-										<p>Kategoria <span>T</span></p>
-									</div>
-								</div>
+								</form>
 							</div>
 						</div>
 					</div>
