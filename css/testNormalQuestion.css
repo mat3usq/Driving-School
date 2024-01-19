@@ -252,7 +252,6 @@ h2 {
   justify-content: center;
 }
 .test .hero-img .box-test .box-container .container-test .question .info-container .explain {
-  margin-left: 20px;
   transition: 0.3s;
   display: none;
 }
