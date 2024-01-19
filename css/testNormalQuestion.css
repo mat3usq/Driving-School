@@ -410,6 +410,12 @@ h2 {
   }
 }
 @media (max-width: 500px) {
+  .test .hero-img .box-test .box-container .container-test .question .info-container .content {
+    font-size: 14px;
+  }
+  .test .hero-img .box-test .box-container .container-test .question .info-container .explain .content {
+    font-size: 14px;
+  }
   .test .hero-img .box-test .box-container .container-test .question .button-box .first-box,
   .test .hero-img .box-test .box-container .container-test .question .button-box .second-box {
     flex-direction: column;
@@ -420,9 +426,9 @@ h2 {
 }
 @media (max-width: 400px) {
   .test .hero-img {
-    height: 175vh;
+    height: 145vh;
   }
   .navbar-left {
-    height: 163vh;
+    height: 133vh;
   }
 }/*# sourceMappingURL=testNormalQuestion.css.map */

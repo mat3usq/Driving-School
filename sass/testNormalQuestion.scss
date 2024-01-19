@@ -404,6 +404,16 @@ h2 {
 				.box-container {
 					.container-test {
 						.question {
+							.info-container {
+								.content {
+									font-size: 14px;
+								}
+
+								.explain .content {
+									font-size: 14px;
+								}
+							}
+
 							.button-box {
 								.first-box,
 								.second-box {
@@ -425,11 +435,11 @@ h2 {
 @media (max-width: 400px) {
 	.test {
 		.hero-img {
-			height: 175vh;
+			height: 145vh;
 		}
 	}
 
 	.navbar-left {
-		height: 163vh;
+		height: 133vh;
 	}
 }
