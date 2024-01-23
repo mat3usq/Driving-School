@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Test Normal Question</title>
+		<title>Exam Result</title>
 
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
@@ -19,13 +19,13 @@
 
 		<script src="https://kit.fontawesome.com/30b5c3e166.js" crossorigin="anonymous"></script>
 
-		<link rel="stylesheet" href="css/navigation.css" />
-		<link rel="stylesheet" href="css/testNormalQuestion.css" />
+		<link rel="stylesheet" href="../css/navigation.css" />
+		<link rel="stylesheet" href="../css/examResult.css" />
 	</head>
 	<body>
 		<nav class="navbar-top shadow-bg">
 			<a class="navbar-brand" href="main.html">
-				<img src="img/logo.png" class="logo" alt="Logo L" />
+				<img src="../img/logo.png" class="logo" alt="Logo L" />
 				<span class="orange-text">Driving <span class="gold-text">School</span></span></a
 			>
 			<div data-aos="fade-right" data-aos-delay="150" class="box-account">
@@ -48,10 +48,10 @@
 				<a data-aos="fade-right" data-aos-delay="150" class="nav-link" href="subjects.html"
 					><i class="fa-solid fa-book-open"></i>Wykłady</a
 				>
-				<a data-aos="fade-right" data-aos-delay="200" class="nav-link active" href="tests.html"
+				<a data-aos="fade-right" data-aos-delay="200" class="nav-link" href="tests.html"
 					><i class="fa-solid fa-person-chalkboard"></i>Nauka Testów</a
 				>
-				<a data-aos="fade-right" data-aos-delay="250" class="nav-link" href="examNormalQuestion.html"
+				<a data-aos="fade-right" data-aos-delay="250" class="nav-link active" href="examNormalQuestion.html"
 					><i class="fa-solid fa-file-pen"></i>Egzamin</a
 				>
 				<a data-aos="fade-right" data-aos-delay="300" class="nav-link" href="instructionExam.html"
@@ -67,51 +67,101 @@
 		</nav>
 
 		<main>
-			<section class="test">
+			<section class="examResult">
 				<div class="hero-img">
 					<div class="hero-shadow"></div>
-					<div class="box-test">
+					<div class="box-examResult">
 						<div class="box-container">
-							<div class="header-test">
-								<div class="box">
-									<i class="fa-solid fa-triangle-exclamation" style="color: #ffd43b"></i>
-									<p>Znaki ostrzegawcze</p>
+							<div class="header-examResult">
+								<div class="header-info">
+									<p>Niestety! Wynik egzaminu</p>
+									<span class="red">Negatywny</span>
 								</div>
-								<p><span>3</span> / 105 pytań</p>
+								<div class="header-info">
+									<p>Koncowa liczba punktow</p>
+									<p><span class="red">36/74</span> pkt</p>
+								</div>
 							</div>
 
-							<div class="container-test">
-								<div class="test-info">
-									<img src="img/testNormalQuestion.jpg" alt="A-2 Niebezpieczny zakręt w lewo." />
+							<div class="container-examResult">
+								<div class="examResult-info">
+									<img src="../img/exam-negative.svg" alt="Negatywny wynik egzaminu" />
+									<div class="box-info">
+										<h4>Poprawne odpowiedzi</h4>
+										<div class="info-container">
+											<div>
+												<p class="info">Czesc Podstawowa</p>
+												<p class="counter"><span>9</span> /20</p>
+											</div>
+											<div>
+												<p class="info">Czesc Specjalistyczna</p>
+												<p class="counter"><span>3</span> /12</p>
+											</div>
+										</div>
+										<div class="bottom-container">
+											<p class="info">Pominiete Pytania</p>
+											<p class="counter"><span class="red">8</span></p>
+										</div>
+									</div>
 								</div>
-								<p id="wrong">Zla odpowiedz</p>
-								<p id="correct">Prawidlowa odpowiedz</p>
-
-								<div class="question">
-									<div class="info-container">
-										<p class="content">
-											Czy w tej sytuacji bezposrednio za pojazdem uprzywilejowanym dozwolone jest poruszanie sie
-											dowolonych pojazdow?
-										</p>
-										<div class="explain">
-											<span>Wyjasnienie</span>
-											<p class="content">
-												A-2 Niebezpieczny zakręt w lewo. Ostrzega o jedynym niebezpiecznym zakręcie w kierunku wskazanym
-												na znaku.
-											</p>
+								<div class="questions">
+									<div class="answer-box">
+										<h4 class="content">Czesc Podstawowa</h4>
+										<div class="answer-container">
+											<div class="container">
+												<span class="answer correct">1</span>
+												<span class="answer none">2</span>
+												<span class="answer correct">3</span>
+												<span class="answer wrong">4</span>
+												<span class="answer none">5</span>
+											</div>
+											<div class="container">
+												<span class="answer correct">6</span>
+												<span class="answer correct">7</span>
+												<span class="answer wrong">8</span>
+												<span class="answer wrong">9</span>
+												<span class="answer correct">10</span>
+											</div>
+											<div class="container">
+												<span class="answer correct">11</span>
+												<span class="answer none">12</span>
+												<span class="answer wrong">13</span>
+												<span class="answer none">14</span>
+												<span class="answer correct">15</span>
+											</div>
+											<div class="container">
+												<span class="answer wrong">16</span>
+												<span class="answer correct">17</span>
+												<span class="answer none">18</span>
+												<span class="answer correct">19</span>
+												<span class="answer wrong">20</span>
+											</div>
 										</div>
 									</div>
-
-									<div class="button-box">
-										<div class="first-box">
-											<a class="back" href="tests.html"><i class="fa-solid fa-angle-left"></i> </a>
-											<button id="no">Nie</button>
-										</div>
-										<div class="second-box">
-											<button id="yes">Tak</button>
-											<a class="next" href="tests.html"><i class="fa-solid fa-angle-right"></i></a>
+									<div class="answer-box">
+										<h4 class="content">Czesc Specjalistyczna</h4>
+										<div class="answer-container">
+											<div class="container">
+												<span class="answer wrong">1</span>
+												<span class="answer correct">2</span>
+												<span class="answer wrong">3</span>
+												<span class="answer correct">4</span>
+												<span class="answer none">5</span>
+											</div>
+											<div class="container">
+												<span class="answer wrong">6</span>
+												<span class="answer wrong">7</span>
+												<span class="answer none">8</span>
+												<span class="answer wrong">9</span>
+												<span class="answer correct">10</span>
+											</div>
+											<div class="container">
+												<span class="answer none">11</span>
+												<span class="answer wrong">12</span>
+											</div>
 										</div>
 									</div>
+									<button class="back"><a href="categoryPanel.html">Powrot</a></button>
 								</div>
 							</div>
 						</div>
@@ -167,8 +217,7 @@
 		</footer>
 
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-		<script src="js/aosSettings.js"></script>
-		<script src="js/navigation.js"></script>
-		<script src="js/testQuestion.js"></script>
+		<script src="../js/aosSettings.js"></script>
+		<script src="../js/navigation.js"></script>
 	</body>
 </html>

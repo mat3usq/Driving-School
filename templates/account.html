@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Exam Normal Question</title>
+		<title>My Account</title>
 
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
@@ -19,13 +19,13 @@
 
 		<script src="https://kit.fontawesome.com/30b5c3e166.js" crossorigin="anonymous"></script>
 
-		<link rel="stylesheet" href="css/navigation.css" />
-		<link rel="stylesheet" href="css/examNormalQuestion.css" />
+		<link rel="stylesheet" href="../css/navigation.css" />
+		<link rel="stylesheet" href="../css/account.css" />
 	</head>
 	<body>
 		<nav class="navbar-top shadow-bg">
 			<a class="navbar-brand" href="main.html">
-				<img src="img/logo.png" class="logo" alt="Logo L" />
+				<img src="../img/logo.png" class="logo" alt="Logo L" />
 				<span class="orange-text">Driving <span class="gold-text">School</span></span></a
 			>
 			<div data-aos="fade-right" data-aos-delay="150" class="box-account">
@@ -51,13 +51,13 @@
 				<a data-aos="fade-right" data-aos-delay="200" class="nav-link" href="tests.html"
 					><i class="fa-solid fa-person-chalkboard"></i>Nauka Testów</a
 				>
-				<a data-aos="fade-right" data-aos-delay="250" class="nav-link active" href="examNormalQuestion.html"
+				<a data-aos="fade-right" data-aos-delay="250" class="nav-link" href="examNormalQuestion.html"
 					><i class="fa-solid fa-file-pen"></i>Egzamin</a
 				>
 				<a data-aos="fade-right" data-aos-delay="300" class="nav-link" href="instructionExam.html"
 					><i class="fa-solid fa-wrench"></i>Instrukcja Egzaminu</a
 				>
-				<a data-aos="fade-right" data-aos-delay="350" class="nav-link" href="account.html"
+				<a data-aos="fade-right" data-aos-delay="350" class="nav-link active" href="account.html"
 					><i class="fa-regular fa-user"></i>Moje Konto</a
 				>
 				<a data-aos="fade-right" data-aos-delay="400" class="nav-link logout" href="main.html"
@@ -67,47 +67,32 @@
 		</nav>
 
 		<main>
-			<section class="exam">
+			<section class="account">
 				<div class="hero-img">
 					<div class="hero-shadow"></div>
-					<div class="box-exam">
+					<div class="box-account">
 						<div class="box-container">
-							<div class="header-exam">
-								<p>Trwa Ezamin <span>Kategoria B</span></p>
-								<p>Zadanie za <span>2 Punkty</span></p>
-								<p>Czas do konca <span>22:06</span></p>
-							</div>
-
-							<div class="container-exam">
-								<div class="exam-info">
-									<img src="img/imgNormalQuestionExam.png" alt="korytarz zycia" />
-									<div class="box-info">
-										<div class="info-container">
-											<div>
-												<p class="info">Czesc Podstawowa</p>
-												<p class="counter"><span>11</span> /20</p>
-											</div>
-											<div>
-												<p class="info">Czesc Specjalistyczna</p>
-												<p class="counter"><span>0</span> /12</p>
-											</div>
-										</div>
-										<div class="timeButton">
-											<p class="info">Czas na odpowiedz</p>
-											<span>6 s</span>
-										</div>
-									</div>
+							<p class="title" data-aos="fade-down" data-aos-delay="100">Moje Konto</p>
+							<div data-aos="zoom-in" data-aos-delay="150" class="container-account">
+								<div class="account-details">
+									<p class="title-header">Imie oraz Nazwisko</p>
+									<p>Mateusz <span>Mogielnicki</span></p>
 								</div>
-								<form class="question" action="examSpecificQuestion.html">
-									<p class="content">
-										Czy w tej sytuacji bezposrednio za pojazdem uprzywilejowanym dozwolone jest poruszanie sie
-										dowolonych pojazdow?
-									</p>
-									<div class="button-box">
-										<button class="no">Nie</button><button class="next">Nastepne</button
-										><button class="yes">Tak</button>
-									</div>
-								</form>
+								<hr />
+								<div class="account-details">
+									<p class="title-header">Wykupione Kategorie</p>
+									<p class="content">A, B, C, D, T</p>
+								</div>
+								<hr />
+								<div class="account-details">
+									<p class="title-header">Adres E-mail</p>
+									<p class="content">mateusz123<span>@wp</span>.pl</p>
+								</div>
+								<hr />
+								<div class="account-details">
+									<p class="title-header">Haslo</p>
+									<p class="content">prosteHaslo123</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -162,7 +147,7 @@
 		</footer>
 
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-		<script src="js/aosSettings.js"></script>
-		<script src="js/navigation.js"></script>
+		<script src="../js/aosSettings.js"></script>
+		<script src="../js/navigation.js"></script>
 	</body>
 </html>
