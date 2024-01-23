@@ -135,7 +135,6 @@ h2 {
 		background-image: url('../img/backgroundSubject.png');
 		background-position: center;
 		background-size: cover;
-		background-attachment: fixed;
 		z-index: 0;
 		overflow: hidden;
 
@@ -143,7 +142,7 @@ h2 {
 			position: absolute;
 			width: 100%;
 			height: 100%;
-			background-color: rgba(0, 0, 0, 0.25);
+			background-color: rgba(0, 0, 0, 0.4);
 			z-index: -5;
 		}
 
