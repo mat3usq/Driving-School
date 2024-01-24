@@ -106,6 +106,7 @@ h2 {
 						padding: 15px;
 						background-color: rgba(0, 0, 0, 0.6);
 						border-radius: 20px;
+						text-align: center;
 
 						i {
 							color: $category-icon;
@@ -214,13 +215,17 @@ h2 {
 }
 
 @media (max-width: 400px) {
+	.navbar-left {
+		height: 115vh;
+	}
+
 	.categories {
 		.hero-img {
-			height: 117vh;
+			height: 127vh;
 			.box-category {
 				top: 12vh;
 				left: 0px;
-				height: 105vh;
+				height: 115vh;
 				width: 100%;
 			}
 		}
